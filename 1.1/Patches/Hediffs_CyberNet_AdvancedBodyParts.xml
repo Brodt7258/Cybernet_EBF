@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<!-- Vanilla Archotech -->
+	
+	<Operation Class="PatchOperationFindMod">
+		
+    <mods>
+      <li>Elite Bionics Framework</li>
+      <li>CyberNet</li>
+    </mods>
+		
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNAdvancedNetworkedArm"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNAdvancedNetworkedLeg"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNAdvancedNetworkedEye"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNAdvancedNetworkedSpine"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNAdvancedNetworkedHeart"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNAdvancedNetworkedStomach"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNAdvancedNetworkedEar"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+			
+      </operations>
+    </match>
+		
+	</Operation>
+	
+</Patch>

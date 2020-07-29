@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<!-- Vanilla Archotech -->
+	
+	<Operation Class="PatchOperationFindMod">
+		
+    <mods>
+      <li>Elite Bionics Framework</li>
+      <li>CyberNet</li>
+    </mods>
+		
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNCombatOptimizationImplant"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNPhasedSleepImplant"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNMemoryEnhancementImplant"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNSocialAnalyzerImplant"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "CNConsciousnessEnhancementImplant"]/comps</xpath>
+          <value>
+            <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+              <scaleAdjustment>0.5</scaleAdjustment>
+            </li>
+          </value>
+        </li>
+			
+      </operations>
+    </match>
+		
+	</Operation>
+	
+</Patch>

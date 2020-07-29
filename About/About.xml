@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+
+	<name>CyberNet EBF Patch</name>
+	<author>Brodt7258</author>
+	<packageId>Brodt7258.CyberNetEBF</packageId>
+	<description>Patch CyberNet limbs to add health using the Elite Bionics Framework</description>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependencies>
+    <li>
+      <packageId>V1024.EBFramework</packageId>
+			<displayName>Elite Bionics Framework</displayName>
+    </li>
+    <li>
+      <packageId>K.CyberNet</packageId>
+      <displayName>CyberNet</displayName>
+    </li>
+	</modDependencies>
+	<loadAfter>
+		<li>V1024.EBFramework</li>
+    <li>K.CyberNet</li>
+	</loadAfter>
+	
+</ModMetaData>
